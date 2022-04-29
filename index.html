@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="puzzel.js"></script>
+
+</head>
+
+<body>
+
+    <div class="row mt-5">
+        <div class="col-lg-4  mx-4 ">
+            <div class="mt-1">
+                <img src="split/1.jpg" id="img1" alt="">
+                <img src="split/2.jpg" id="img2" alt="">
+                <img src="split/3.jpg" id="img3" alt="">
+            </div>
+
+            <div class="mt-1">
+                <img src="split/4.jpg" id="img4" alt="">
+                <img src="split/5.jpg" id="img5" alt="">
+                <img src="split/6.jpg" id="img6" alt="">
+            </div>
+
+            <div class="mt-1">
+                <img src="split/7.jpg" id="img7" alt="">
+                <img src="split/8.jpg" id="img8" alt="">
+                <img src="split/9.jpg" id="img9" alt="">
+            </div>
+
+            <div class="mt-1">
+                <img src="split/10.jpg" id="img10" alt="">
+                <img src="split/11.jpg" id="img11" alt="">
+                <img src="split/12.jpg" id="img12" alt="">
+            </div>
+        </div>
+        <div>
+            <table>
+                <tr>
+
+                    <td colspan="2" style="text-align: center;">
+                        <img src="toparrow.jpg" alt="" onclick="move('up')" style="width: 50px; border-radius: 20px;">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <img src="leftarrow.jpg" alt="" onclick="move('left')"
+                            style="width: 50px; border-radius: 20px;">
+                    </td>
+                    <td>
+                        <img src="rightarrow.jpg" alt="" onclick="move('right')"
+                            style="width: 50px; border-radius: 20px;">
+                    </td>
+
+                </tr>
+                <br>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <img src="downarrow.jpg" alt="" onclick="move('down')"
+                            style="width: 50px; border-radius: 20px; margin-bottom: 20px;">
+                    </td>
+                </tr>
+
+                <tr class="mt-4 text-left">
+                    <td>
+                        <button onclick="start()" id="btnStart">START</button>
+                        <button onclick="stop()" id="btnStop" >STOP</button>
+                        <h6 id="time" >time spent:</h6>
+                        <h4 >move count:<span id="count">0</span></h4>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="col-lg-4">
+            <img src="mona.jpg" alt="" style="margin-left: 100px;">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
